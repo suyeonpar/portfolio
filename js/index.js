@@ -34,7 +34,7 @@ const $lang = localStorage.getItem("lang");
 const url = new URL(location.href).searchParams;
 const lang = url.get("Lang")
 
-axios.get("../data/data.json")
+axios.get("data/data.json")
 .then(function(res){
     if($lang == "en"){
         res.data.EnNav.map((e,i)=>{
