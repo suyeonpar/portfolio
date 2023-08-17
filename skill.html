@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <div class="w-full nav dark:border-b px-[2%] sticky top-0 bg-white py-2.5 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html">
+                <img src="https://via.placeholder.com/120x50" alt="logo" title="로고">
+            </a>
+            <div class="basis-3/4 hidden md:block">
+                <ul class="flex justify-around list">
+                    <li class="relative"><a href="profile.html">프로필</a></li>
+                    <li class="relative on"><a href="skill.html">스킬</a></li>
+                    <li class="relative"><a href="portfolio.html">포트폴리오</a></li>
+                </ul>
+            </div>
+            <div class="basis-1/12 hidden md:block">
+                <ul class="flex justify-between">
+                    <li onclick="darkMode()" class="basis-2/4 text-center cursor-pointer text-2xl">
+                        <i class="fas fa-moon"></i>
+                    </li>
+                    <li class="basis-2/4 text-center cursor-pointer text-2xl relative group">
+                        <i class="fas fa-globe"></i>
+                        <ul class="dark:bg-[#272929] absolute w-20 top-[30px] -left-[12px] bg-white rounded transition-all duration-500 flex flex-wrap h-0 overflow-hidden group-hover:h-20">
+                            <li onclick="language('kr')" class="w-full basis-full h-10 leading-10 hover:font-bold"><a href="?Lang=kr" class="text-sm">한국어</a></li>
+                            <li onclick="language('en')" class="w-full basis-full h-10 leading-10 hover:font-bold"><a href="?Lang=en" class="text-sm">영어</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="fixed right-5 top-5 transition-all duration-1000 z-[100] cursor-pointer md:hidden m-btn" onclick="mNav()">
+        <div class="w-[30px] h-[5px] bg-black dark:bg-[#ebf4f1] rounded m-[5px] transition duration-1000"></div>
+        <div class="w-[30px] h-[5px] bg-black dark:bg-[#ebf4f1] rounded m-[5px] transition duration-1000"></div>
+        <div class="w-[30px] h-[5px] bg-black dark:bg-[#ebf4f1] rounded m-[5px] transition duration-1000"></div>
+    </div>
+    <div class="w-72 h-full fixed bg-gray-100 dark:bg-[#272929] z-50 p-12 top-0 -right-80 box-border transition-all duration-500 md:hidden">
+        <div class="text-center mt-6">
+            <img src="https://via.placeholder.com/100" alt="100x100" class="mx-auto rounded-full mb-4">
+            <p>프론트엔드 개발자 <strong>박수연</strong></p>
+        </div>
+        <ul class="mt-12">
+            <li class="pt-5 pb-2 border-b hover:font-bold"><a href="profile.html"><i class="fas fa-user"></i> 프로필</a></li>
+            <li class="pt-5 pb-2 border-b hover:font-bold""><a href="skill.html"><i class="fas fa-code"></i> 스킬</a></li>
+            <li class="pt-5 pb-2 border-b hover:font-bold""><a href="portfolio.html"><i class="fas fa-window-maximize"></i> 포트폴리오</a></li>
+        </ul>
+    </div>
+    
+    <div class="w-full pt-12 mt-16 px-[2%] pb-8">
+        <div class="max-w-7xl mx-auto p-5 bg-white rounded-md border dark:bg-[#272929] dark:text-[#ebf4f1]">
+            <h3 class="relative font-bold text-center text-xl sm:text-2xl lg:text-3xl tracking-widest after:absolute after:w-10 after:h-[2px] after:bg-black after:dark:bg-[#d9d9d9] after:-bottom-1 after:left-2/4 after:-translate-x-2/4">스킬</h3>
+        </div>
+        <div class="max-w-7xl mx-auto mt-8">
+            <div class="bg-white rounded-md border dark:bg-[#272929] dark:text-[#ebf4f1] p-5 mb-8 last:mb-0 skill-content"></div>
+        </div>
+        <div class="max-w-7xl mx-auto">
+
+        <div class=""></div>
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/skill.js"></script>
+</body>
+</html>

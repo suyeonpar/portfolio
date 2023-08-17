@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <div class="w-full nav dark:border-b px-[2%] sticky top-0 bg-white py-2.5 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html">
+                <img src="https://via.placeholder.com/120x50" alt="logo" title="로고">
+            </a>
+            <div class="basis-3/4 hidden md:block">
+                <ul class="flex justify-around list">
+                    <li class="relative"><a href="profile.html">프로필</a></li>
+                    <li class="relative"><a href="skill.html">스킬</a></li>
+                    <li class="relative"><a href="portfolio.html">포트폴리오</a></li>
+                </ul>
+            </div>
+            <div class="basis-1/12 hidden md:block">
+                <ul class="flex justify-between">
+                    <li onclick="darkMode()" class="basis-2/4 text-center cursor-pointer text-2xl">
+                        <i class="fas fa-moon"></i>
+                    </li>
+                    <li class="basis-2/4 text-center cursor-pointer text-2xl relative group">
+                        <i class="fas fa-globe"></i>
+                        <ul class="dark:bg-[#272929] absolute w-20 top-[30px] -left-[12px] bg-white rounded transition-all duration-500 flex flex-wrap h-0 overflow-hidden group-hover:h-20">
+                            <li onclick="language('kr')" class="w-full basis-full h-10 leading-10 hover:font-bold"><a href="?Lang=kr" class="text-sm">한국어</a></li>
+                            <li onclick="language('en')" class="w-full basis-full h-10 leading-10 hover:font-bold"><a href="?Lang=en" class="text-sm">영어</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="fixed right-5 top-5 transition-all duration-1000 z-[100] cursor-pointer md:hidden m-btn" onclick="mNav()">
+        <div class="w-[30px] h-[5px] bg-black dark:bg-[#ebf4f1] rounded m-[5px] transition duration-1000"></div>
+        <div class="w-[30px] h-[5px] bg-black dark:bg-[#ebf4f1] rounded m-[5px] transition duration-1000"></div>
+        <div class="w-[30px] h-[5px] bg-black dark:bg-[#ebf4f1] rounded m-[5px] transition duration-1000"></div>
+    </div>
+    <div class="w-72 h-full fixed bg-gray-100 dark:bg-[#272929] z-50 p-12 top-0 -right-80 box-border transition-all duration-500 md:hidden">
+        <div class="text-center mt-6">
+            <img src="https://via.placeholder.com/100" alt="100x100" class="mx-auto rounded-full mb-4">
+            <p>프론트엔드 개발자 <strong>박수연</strong></p>
+        </div>
+        <ul class="mt-12">
+            <li class="pt-5 pb-2 border-b hover:font-bold"><a href="profile.html"><i class="fas fa-user"></i> 프로필</a></li>
+            <li class="pt-5 pb-2 border-b hover:font-bold""><a href="skill.html"><i class="fas fa-code"></i> 스킬</a></li>
+            <li class="pt-5 pb-2 border-b hover:font-bold""><a href="portfolio.html"><i class="fas fa-window-maximize"></i> 포트폴리오</a></li>
+        </ul>
+    </div>
+    <div class="w-full">
+        <div class="max-7xl mx-auto pt-40 pb-24">
+            <div class="flex flex-wrap items-center">
+                <div class="basis-full md:basis-2/4 text-center py-3">
+                    <p class="text-green-600 hover:text-green-500 text-2xl lg:text-4xl font-medium lg:font-semibold mb-5 lg:leading-normal leading-snug dark:text-[#d9d9d9]">
+                        <span id="typed"></span>
+                    </p>
+                    <button class="bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium text-white rounded-full text-sm px-28 py-2.5 text-center mr-2 mb-2 dark:bg-[#272929] dark:text-[#ebf4f1] dark:hover:bg-[#333] dark:focus:ring-green-800 onclick="window.location='profile.html'">프로필</button>
+                </div>
+                <div class="basis-full md:basis-2/4 text-center">
+                    <div class="m-3 p-1 lg:p-5">
+                        <lottie-player src="https://lottie.host/4f75e80f-7572-43c6-99a4-192002417e2d/ObvyEgf5b6.json" background="transparent" speed="1" style="max-width: 600px; max-height: 600px;" loop autoplay></lottie-player>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        let typed = new Typed("#typed",{
+        strings: [
+            "안녕하세요...<br>프론트엔드 개발자<br>박수연입니다.",
+            "두번째 메세지입니다.<br> 하고싶은 말들...",
+            "세번째 메세지입니다.<br> 하고싶은 말들..."
+        ],
+            typeSpeed: 100,
+            backSpeed: 80,
+    })
+    </script>
+
+</body>
+</html>

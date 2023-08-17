@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/all.css">
+    <style>
+    .cateList li.on{background-color: rgb(255, 197, 255); font-weight: bold; color: #fff;}
+    .mokup-img > div{position: absolute; bottom: 0; overflow: hidden;}
+    .mokup-img > div:nth-child(1){width: 85%; left: 50%; transform: translateX(-50%);}
+    .mokup-img > div:nth-child(2){width: 35%; right: 0;}
+    .mokup-img > div:nth-child(3){width: 23%; left: 0;}
+    .mokup-img > div:nth-child(1)::after{content:""; position: absolute; width: 92%; height: 63%; background: url("https://greenart-web.com/preview.jpg") center top; left: 19px; top: 20px; background-size: cover; transition: 5s;}
+    .mokup-img > div:nth-child(2)::after{content:""; position: absolute; width: 86%; height: 82%; background: url("https://greenart-web.com/preview.jpg") center top; left: 16px; top: 26px; background-size: cover; transition: 5s;}
+    .mokup-img > div:nth-child(3)::after{content:""; position: absolute; width: 90%; height: 95%; background: url("https://greenart-web.com/preview.jpg") center top; left: 7px; top: 8px; background-size: cover; transition: 5s; border-radius: 5px;}
+    .mokup-img > div:hover::after{background-position: center bottom;}
+    @media screen and (max-width: 1200px){
+        .mokup-img{flex-basis: 100%; height: 500px;}
+        .mokup-img > div:nth-child(1){width: 550px;}
+        .mokup-img > div:nth-child(2){width: 184px; right: 0;}
+        .mokup-img > div:nth-child(3){width: 126px; left: 0;}
+        .mokup-img > div:nth-child(1)::after{top: 23px; height: 62%; left: 21px; width: 92.4%;}
+        .mokup-img > div:nth-child(2)::after{width: 85%; top: 24px;}
+    }
+    @media screen and (max-width: 640px){
+        .mokup-img{height: 70.3125vw;}
+        .mokup-img{flex-basis: 100%; height: 500px;}
+        .mokup-img > div:nth-child(1){width: 100%;}
+        .mokup-img > div:nth-child(2){width: 35%;}
+        .mokup-img > div:nth-child(3){width: 20%;}
+        .mokup-img > div:nth-child(1)::after{width: 92.5%; left: 3.8%; top: 4.7%;}
+        .mokup-img > div:nth-child(2)::after{left: 8%; top: 8%;}
+        .mokup-img > div:nth-child(3)::after{height: 95%; left: 5.5%; top: 2.5%;}
+    }
+    </style>
+</head>
+<body>
+    <div class="w-full nav dark:border-b px-[2%] sticky top-0 bg-white py-2.5 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html">
+                <img src="https://via.placeholder.com/120x50" alt="logo" title="로고">
+            </a>
+            <div class="basis-3/4 hidden md:block">
+                <ul class="flex justify-around list">
+                    <li class="relative"><a href="profile.html">프로필</a></li>
+                    <li class="relative"><a href="skill.html">스킬</a></li>
+                    <li class="relative on"><a href="portfolio.html">포트폴리오</a></li>
+                </ul>
+            </div>
+            <div class="basis-1/12 hidden md:block">
+                <ul class="flex justify-between">
+                    <li onclick="darkMode()" class="basis-2/4 text-center cursor-pointer text-2xl">
+                        <i class="fas fa-moon"></i>
+                    </li>
+                    <li class="basis-2/4 text-center cursor-pointer text-2xl relative group">
+                        <i class="fas fa-globe"></i>
+                        <ul class="dark:bg-[#272929] absolute w-20 top-[30px] -left-[12px] bg-white rounded transition-all duration-500 flex flex-wrap h-0 overflow-hidden group-hover:h-20">
+                            <li onclick="language('kr')" class="w-full basis-full h-10 leading-10 hover:font-bold"><a href="?Lang=kr" class="text-sm">한국어</a></li>
+                            <li onclick="language('en')" class="w-full basis-full h-10 leading-10 hover:font-bold"><a href="?Lang=en" class="text-sm">영어</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="fixed right-5 top-5 transition-all duration-1000 z-[100] cursor-pointer md:hidden m-btn" onclick="mNav()">
+        <div class="w-[30px] h-[5px] bg-black dark:bg-[#ebf4f1] rounded m-[5px] transition duration-1000"></div>
+        <div class="w-[30px] h-[5px] bg-black dark:bg-[#ebf4f1] rounded m-[5px] transition duration-1000"></div>
+        <div class="w-[30px] h-[5px] bg-black dark:bg-[#ebf4f1] rounded m-[5px] transition duration-1000"></div>
+    </div>
+    <div class="w-72 h-full fixed bg-gray-100 dark:bg-[#272929] z-50 p-12 top-0 -right-80 box-border transition-all duration-500 md:hidden">
+        <div class="text-center mt-6">
+            <img src="https://via.placeholder.com/100" alt="100x100" class="mx-auto rounded-full mb-4">
+            <p>프론트엔드 개발자 <strong>박수연</strong></p>
+        </div>
+        <ul class="mt-12">
+            <li class="pt-5 pb-2 border-b hover:font-bold"><a href="profile.html"><i class="fas fa-user"></i> 프로필</a></li>
+            <li class="pt-5 pb-2 border-b hover:font-bold""><a href="skill.html"><i class="fas fa-code"></i> 스킬</a></li>
+            <li class="pt-5 pb-2 border-b hover:font-bold""><a href="portfolio.html"><i class="fas fa-window-maximize"></i> 포트폴리오</a></li>
+        </ul>
+    </div>
+
+
+    <div class="w-full pt-12 mt-16 px-[2%] pb-8">
+        <div class="max-w-7xl mx-auto p-5 bg-white rounded-md border dark:bg-[#272929] dark:text-[#ebf4f1]">
+            <h3 class="relative font-bold text-center text-xl sm:text-2xl lg:text-3xl tracking-widest after:absolute after:w-10 after:h-[2px] after:bg-black after:dark:bg-[#d9d9d9] after:-bottom-1 after:left-2/4 after:-translate-x-2/4">포트폴리오</h3>
+        </div>
+        <div class="max-w-7xl mx-auto mt-8">
+            <ul class="flex m-4 ml-0 cateList">
+                <li class="cursor-pointer mr-4 border dark:bg-[#272929] bg-white py-2 px-5 rounded-md dark:text-[#ebf4f1]" data-type="전체">
+                    <button>전체</button>
+                </li>
+                <li class="cursor-pointer mr-4 border dark:bg-[#272929] bg-white py-2 px-5 rounded-md dark:text-[#ebf4f1]" data-type="Webapp">
+                    <button>WebApp</button>
+                </li>
+                <li class="cursor-pointer mr-4 border dark:bg-[#272929] bg-white py-2 px-5 rounded-md dark:text-[#ebf4f1]" data-type="Publishing">
+                    <button>Publishing</button>
+                </li>
+                <li class="cursor-pointer mr-4 border dark:bg-[#272929] bg-white py-2 px-5 rounded-md dark:text-[#ebf4f1]" data-type="Project">
+                    <button>Project</button>
+                </li>
+            </ul>
+        </div>
+        <div class="max-w-7xl mx-auto mt-8 port-content"></div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>

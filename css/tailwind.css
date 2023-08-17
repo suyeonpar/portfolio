@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{font-family: 'IBMPlexSansKR-Regular';}
+
+.dark body,
+.dark .nav{
+    background-color: #5d6868;
+    animation: infinite 9s background alternate-reverse;
+    color: #ebf4f1;
+}
+@keyframes background {
+    0%{background-color: #091a28;}
+    50%{background-color: #08131b;}
+    100%{background-color: #12202e;}
+}
+.list li::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+    transform: scaleX(0);
+}
+.dark .list li::after{
+    background-color: #ebf4f1;
+}
+.list li.on::after,
+.list li:hover::after{
+    transform: scaleX(1);
+}
+.list li.on,
+.list li:hover{
+    font-weight: bold;
+}
+.m-btn.on > div:nth-child(1){
+    transform: rotate(45deg) translateY(14px);
+}
+.m-btn.on > div:nth-child(2){
+    transform: translateX(-30px);
+    opacity: 0;
+}
+.m-btn.on > div:nth-child(3){  
+    transform: rotate(-45deg) translateY(-14px);
+}
+.m-btn.on + div{
+    right: 0;
+}

@@ -1,0 +1,243 @@
+{
+    "KrNav" : [
+        {
+            "title" : "프로필"
+        },
+        {
+            "title" : "스킬"
+        },
+        {
+            "title" : "포트폴리오"
+        }
+    ],
+    "EnNav" : [
+        {
+            "title" : "Profile"
+        },
+        {
+            "title" : "Skill"
+        },
+        {
+            "title" : "Portfolio"
+        }
+    ],
+    "Profile" : [
+        {
+            "title" : "◆ MIND",
+            "desc" : "혼자 부딪혀봐야 온전히 내 것이 된다",
+            "desc2" : "는 마인드를 가지고 있어, 혼자 찾아보고 고민하여 문제를 해결하는 것을 좋아합니다."
+        },
+        {
+            "title" : "◆ EDUCATION",
+            "date" : [
+                "2023.06.29 ~ 2023.11.29",
+                "2023.01.01 ~ 2023.01.31",
+                "2023.02.01 ~ 2023.03.31",
+                "2023.03.01 ~ 2023.04.30"
+            ],
+            "dateDesc" : [
+                "(혼잡+디지털컨버전스) React를 활용한 프론트엔드 개발자 양성(SPA 프로젝트 개발) A",
+                "XXX 중학교 졸업",
+                "XXX 고등학교 졸업",
+                "XXX 대학교 졸업"            
+            ]
+        },
+        {
+            "title" : "◆ LICENSE",
+            "date" : [
+                "2023.06",
+                "2023.10",
+                "2023.11"
+            ],
+            "dateDesc" : [
+                "정보처리산업기사",
+                "운전면허1종보통",
+                "컴퓨터활용능력1급"
+            ]
+        }
+    ],
+    "Skill" : [
+        {
+            "title" : "html",
+            "progressBefore" : 0,
+            "progressAfter" : 50,
+            "desc" : "웹표준에 준수하여, 마크업을 할 수 있으며, float이 아닌 flex 및 grid를 활용하여 레이아웃을 구성할 수 있다. 1"
+        },
+        {
+            "title" : "css",
+            "progressBefore" : 0,
+            "progressAfter" : 60,
+            "desc" : "웹표준에 준수하여, 마크업을 할 수 있으며, float이 아닌 flex 및 grid를 활용하여 레이아웃을 구성할 수 있다. 2"
+        },
+        {
+            "title" : "js",
+            "progressBefore" : 0,
+            "progressAfter" : 70,
+            "desc" : "웹표준에 준수하여, 마크업을 할 수 있으며, float이 아닌 flex 및 grid를 활용하여 레이아웃을 구성할 수 있다. 3"
+        },
+        {
+            "title" : "react",
+            "progressBefore" : 0,
+            "progressAfter" : 80,
+            "desc" : "웹표준에 준수하여, 마크업을 할 수 있으며, float이 아닌 flex 및 grid를 활용하여 레이아웃을 구성할 수 있다. 4"
+        },
+        {
+            "title" : "jquery",
+            "progressBefore" : 0,
+            "progressAfter" : 90,
+            "desc" : "웹표준에 준수하여, 마크업을 할 수 있으며, float이 아닌 flex 및 grid를 활용하여 레이아웃을 구성할 수 있다. 5"
+        }
+    ],
+    "Portfolio" : [
+        {
+            "img" : "https://via.placeholder.com/500",
+            "descTitle" : "XXX 웹앱 1",
+            "desc" : "API를 활용한 웹앱 개발...",
+            "keyword" : ["#심플함", "#깔끔함", "#반응형"],
+            "color" : ["pink", "rgb(255, 197, 255)", "red"],
+            "font" : "IBMPlexSansKR-Regular",
+            "tools" : ["Figma", "PS", "VS CODE", "GIT"],
+            "date" : "10일(기획1일/구상1일/제작8일)",
+            "contribution" : "100%",
+            "type" : "Webapp",
+            "original" : "https://www.kakao.com",
+            "create" : "https://www.kakao.com",
+            "git" : "https://www.github.com"
+        },
+        {
+            "img" : "https://via.placeholder.com/500",
+            "descTitle" : "XXX 웹앱 2",
+            "desc" : "API를 활용한 웹앱 개발...",
+            "keyword" : ["#심플함", "#깔끔함", "#반응형"],
+            "color" : ["pink", "blue", "red"],
+            "font" : "IBMPlexSansKR-Regular",
+            "tools" : ["Figma", "PS", "VS CODE", "GIT"],
+            "date" : "10일(기획1일/구상1일/제작8일)",
+            "contribution" : "100%",
+            "type" : "Publishing",
+            "original" : "https://www.kakao.com",
+            "create" : "https://www.kakao.com",
+            "git" : "https://www.github.com"
+        },
+        {
+            "img" : "https://via.placeholder.com/500",
+            "descTitle" : "XXX 웹앱 3",
+            "desc" : "API를 활용한 웹앱 개발...",
+            "keyword" : ["#심플함", "#깔끔함", "#반응형"],
+            "color" : ["pink", "blue", "red"],
+            "font" : "IBMPlexSansKR-Regular",
+            "tools" : ["Figma", "PS", "VS CODE", "GIT"],
+            "date" : "10일(기획1일/구상1일/제작8일)",
+            "contribution" : "100%",
+            "type" : "Publishing",
+            "original" : "https://www.kakao.com",
+            "create" : "https://www.kakao.com",
+            "git" : "https://www.github.com"
+        },
+        {
+            "img" : "https://via.placeholder.com/500",
+            "descTitle" : "XXX 웹앱 4",
+            "desc" : "API를 활용한 웹앱 개발...",
+            "keyword" : ["#심플함", "#깔끔함", "#반응형"],
+            "color" : ["pink", "blue", "red"],
+            "font" : "IBMPlexSansKR-Regular",
+            "tools" : ["Figma", "PS", "VS CODE", "GIT"],
+            "date" : "10일(기획1일/구상1일/제작8일)",
+            "contribution" : "100%",
+            "type" : "Project",
+            "original" : "https://www.kakao.com",
+            "create" : "https://www.kakao.com",
+            "git" : "https://www.github.com"
+        },
+        {
+            "img" : "https://via.placeholder.com/500",
+            "descTitle" : "XXX 웹앱 5",
+            "desc" : "API를 활용한 웹앱 개발...",
+            "keyword" : ["#심플함", "#깔끔함", "#반응형"],
+            "color" : ["pink", "blue", "red"],
+            "font" : "IBMPlexSansKR-Regular",
+            "tools" : ["Figma", "PS", "VS CODE", "GIT"],
+            "date" : "10일(기획1일/구상1일/제작8일)",
+            "contribution" : "100%",
+            "type" : "Webapp",
+            "original" : "https://www.kakao.com",
+            "create" : "https://www.kakao.com",
+            "git" : "https://www.github.com"
+        },
+        {
+            "img" : "https://via.placeholder.com/500",
+            "descTitle" : "XXX 웹앱 6",
+            "desc" : "API를 활용한 웹앱 개발...",
+            "keyword" : ["#심플함", "#깔끔함", "#반응형"],
+            "color" : ["pink", "blue", "red"],
+            "font" : "IBMPlexSansKR-Regular",
+            "tools" : ["Figma", "PS", "VS CODE", "GIT"],
+            "date" : "10일(기획1일/구상1일/제작8일)",
+            "contribution" : "100%",
+            "type" : "Project",
+            "original" : "https://www.kakao.com",
+            "create" : "https://www.kakao.com",
+            "git" : "https://www.github.com"
+        },
+        {
+            "img" : "https://via.placeholder.com/500",
+            "descTitle" : "XXX 웹앱 7",
+            "desc" : "API를 활용한 웹앱 개발...",
+            "keyword" : ["#심플함", "#깔끔함", "#반응형"],
+            "color" : ["pink", "blue", "red"],
+            "font" : "IBMPlexSansKR-Regular",
+            "tools" : ["Figma", "PS", "VS CODE", "GIT"],
+            "date" : "10일(기획1일/구상1일/제작8일)",
+            "contribution" : "100%",
+            "type" : "Publishing",
+            "original" : "https://www.kakao.com",
+            "create" : "https://www.kakao.com",
+            "git" : "https://www.github.com"
+        },
+        {
+            "img" : "https://via.placeholder.com/500",
+            "descTitle" : "XXX 웹앱 8",
+            "desc" : "API를 활용한 웹앱 개발...",
+            "keyword" : ["#심플함", "#깔끔함", "#반응형"],
+            "color" : ["pink", "blue", "red"],
+            "font" : "IBMPlexSansKR-Regular",
+            "tools" : ["Figma", "PS", "VS CODE", "GIT"],
+            "date" : "10일(기획1일/구상1일/제작8일)",
+            "contribution" : "100%",
+            "type" : "Project",
+            "original" : "https://www.kakao.com",
+            "create" : "https://www.kakao.com",
+            "git" : "https://www.github.com"
+        },
+        {
+            "img" : "https://via.placeholder.com/500",
+            "descTitle" : "XXX 웹앱 9",
+            "desc" : "API를 활용한 웹앱 개발...",
+            "keyword" : ["#심플함", "#깔끔함", "#반응형"],
+            "color" : ["pink", "blue", "red"],
+            "font" : "IBMPlexSansKR-Regular",
+            "tools" : ["Figma", "PS", "VS CODE", "GIT"],
+            "date" : "10일(기획1일/구상1일/제작8일)",
+            "contribution" : "100%",
+            "type" : "Webapp",
+            "original" : "https://www.kakao.com",
+            "create" : "https://www.kakao.com",
+            "git" : "https://www.github.com"
+        },
+        {
+            "img" : "https://via.placeholder.com/500",
+            "descTitle" : "XXX 웹앱 10",
+            "desc" : "API를 활용한 웹앱 개발...",
+            "keyword" : ["#심플함", "#깔끔함", "#반응형"],
+            "color" : ["pink", "blue", "red"],
+            "font" : "IBMPlexSansKR-Regular",
+            "tools" : ["Figma", "PS", "VS CODE", "GIT"],
+            "date" : "10일(기획1일/구상1일/제작8일)",
+            "contribution" : "100%",
+            "type" : "Publishing",
+            "original" : "https://www.kakao.com",
+            "create" : "https://www.kakao.com",
+            "git" : "https://www.github.com"
+        }
+    ]
+}
